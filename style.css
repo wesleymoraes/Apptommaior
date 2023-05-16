@@ -4,23 +4,18 @@ body {
     padding: 20px;
     display: flex;
   }
-
+  
   section:nth-child(1) {
-    flex-basis: 70%;
-  }
-
-  section:nth-child(2) {
-    flex-basis: 20%;
-  }
-  @media (max-width: 767px) {
-    body {
-      flex-direction: column;
-    }
-
-    section:nth-child(1),
-    section:nth-child(2) {
       flex-basis: 100%;
+  }
+
+  @media (max-width: 767px) {
+    body section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
+
   }
   h1 {
     color: #333;
